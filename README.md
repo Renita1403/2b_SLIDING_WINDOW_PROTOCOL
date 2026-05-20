@@ -10,6 +10,7 @@
 ## PROGRAM
 
 SERVER.PY:
+```
 import socket
 sock = socket.socket()
 sock.bind(('localhost',6000))
@@ -27,8 +28,9 @@ while i < len(frames):
     i += window
 c.close()
 sock.close()
-
+```
 CLIENT.PY:
+```
 import socket
 s = socket.socket()
 s.connect(('localhost',6000))
@@ -39,10 +41,11 @@ while True:
    print(data)
    s.send("ACK received".encode())
 s.close()
-
+```
 ## OUTPUT:
+<img width="1877" height="1003" alt="Screenshot 2026-05-20 232640" src="https://github.com/user-attachments/assets/99b89c44-6139-484e-9d04-1696536b0899" />
 
-<img width="1857" height="942" alt="Screenshot 2026-05-20 191316" src="https://github.com/user-attachments/assets/956ac8b4-f701-46bb-bc1c-86c724c871de" />
+
 
 ## RESULT
 Thus, python program to perform stop and wait protocol was successfully executed
