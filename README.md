@@ -40,7 +40,7 @@ while True:
    s.send("ACK received".encode())
 s.close()
 
-## OUtPUT:
+## OUTPUT:
 
 <img width="1857" height="942" alt="Screenshot 2026-05-20 191316" src="https://github.com/user-attachments/assets/956ac8b4-f701-46bb-bc1c-86c724c871de" />
 
